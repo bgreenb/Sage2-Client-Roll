@@ -1,0 +1,8 @@
+<roll name="Sage2" interface="4.0">
+	<timestamp time="12:57:45" date="August 01 2016" tz="PDT"/>
+	<color edge="lightsteelblue" node="lightsteelblue"/>
+	<info version="6.2" release="0" arch="x86_64" os="linux"/>
+	<iso maxsize="600" bootable="0" mkisofs="-b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table"/>
+	<rpm rolls="0" bin="1" src="0"/>
+	<author name="root" host="calit2-110-119-41.ucsd.edu"/>
+</roll>
