@@ -32,4 +32,8 @@ To install on a node, execute:
 * /opt/x264, /opt/lame, /opt/libtheora, /opt/libvorbis, /opt/libwebp: Dependencies for ffmpeg
 * /usr/bin/google-chrome: The google chrome browser 
 
+**How to Use**
+
+The [Sage2-Roll](https://github.com/bsgreenb-ucsd/Sage2-Roll) repo's readme has instructions in how to use this roll in conjuction with the Sage2 server to make a fully functional Sage2 based display wall. In addition it gives a basic description on how to use the display wall. 
+
 
