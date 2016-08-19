@@ -5,11 +5,15 @@ Display Client Roll for Sage2
 
 This roll will install ffmpeg and the Google Chrome browser on display tile nodes. [Sage2](http://sage2.sagecommons.org/) recommends Google Chrome over firefox for display clients. Instead of directly building google chrome from source, this roll uses the script from [Richard Lloyd](http://chrome.richardlloyd.org.uk/) to install the latest version of google chrome instead. 
 
-It is expected you have already installed something like the cuda roll already installed on your compute nodes so the they have have video output.
+It is expected you have already installed the proper video drivers (such as the cuda roll for Nvidia GPUs) on your display nodes so the they have have video output for the display wall.
 
 ##Building and Installing
 
 In the main folder of the roll:
+
+Run bootstrap.sh with root permissions to get the needed dependencies to build the roll:
+
+	# ./bootstrap.sh
 
 Build the roll using: 
 		
@@ -25,6 +29,11 @@ To install on a node, execute:
 	# rocks enable roll Sage2Client
 	# (cd /export/rocks/install; rocks create distro)
 	# rocks run roll Sage2Client | bash
+	
+Then reinstall on the node you want to have the sage server on:
+	
+	# rocks set host boot compute-X-Y action=install
+	# rocks run host compute-X-Y reboot
 	
 **What is Installed** 
 
