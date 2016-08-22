@@ -31,6 +31,7 @@ yum-config-manager --enable base
 wget http://chrome.richardlloyd.org.uk/install_chrome.sh
 chmod u+x install_chrome.sh
 ./install_chrome.sh -f
+yum install -y google-chrome-stable
 </post>
 
 
